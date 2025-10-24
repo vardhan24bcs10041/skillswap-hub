@@ -2,25 +2,19 @@
 
 ## 📋 Quick Deployment Checklist
 
-### ✅ Backend Deployment (Heroku)
+### ✅ Backend Deployment (Vercel)
 
-1. **Create Heroku App**:
-   ```bash
-   heroku create skillswap-hub-api
-   ```
-
-2. **Set Environment Variables**:
-   ```bash
-   heroku config:set JWT_SECRET=your-secure-jwt-secret-here
-   heroku config:set MONGO_URI=mongodb+srv://username:password@cluster.mongodb.net/skillswap-hub-prod
-   heroku config:set NODE_ENV=production
-   heroku config:set FRONTEND_URL=https://your-netlify-app.netlify.app
-   ```
-
-3. **Deploy Backend**:
-   ```bash
-   git subtree push --prefix=backend heroku main
-   ```
+1. **Go to Vercel Dashboard**: https://vercel.com
+2. **Import GitHub Repository**: `vardhan24bcs10041/skillswap-hub`
+3. **Configure**:
+   - **Root Directory**: `backend`
+   - **Build Command**: `npm run vercel-build`
+4. **Set Environment Variables**:
+   - `MONGO_URI`: `mongodb+srv://username:password@cluster.mongodb.net/skillswap-hub-prod`
+   - `JWT_SECRET`: `your-secure-jwt-secret-here`
+   - `NODE_ENV`: `production`
+   - `FRONTEND_URL`: `https://your-netlify-app.netlify.app`
+5. **Deploy!**
 
 ### ✅ Frontend Deployment (Netlify)
 
@@ -45,12 +39,12 @@
 ## 🔗 Your Deployment URLs
 
 - **Frontend**: https://your-app.netlify.app
-- **Backend API**: https://your-app.herokuapp.com
+- **Backend API**: https://your-app.vercel.app
 - **GitHub Repository**: https://github.com/vardhan24bcs10041/skillswap-hub
 
 ## 📝 Environment Variables Summary
 
-### Heroku (Backend)
+### Vercel (Backend)
 ```
 MONGO_URI=mongodb+srv://username:password@cluster.mongodb.net/skillswap-hub-prod
 JWT_SECRET=your-secure-jwt-secret-here
@@ -60,7 +54,7 @@ FRONTEND_URL=https://your-netlify-app.netlify.app
 
 ### Netlify (Frontend)
 ```
-REACT_APP_API_URL=https://your-heroku-app.herokuapp.com/api
+REACT_APP_API_URL=https://your-vercel-app.vercel.app/api
 ```
 
 ## 🎯 Final Submission

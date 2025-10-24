@@ -113,8 +113,11 @@ A full-stack web application that enables users to exchange skills with each oth
    ```
 
 7. **Access the Application**
-   - Frontend: http://localhost:3000
-   - Backend API: http://localhost:5000
+   - **Live Frontend**: https://your-netlify-app.netlify.app
+   - **Live Backend API**: https://skillswap-hub-lemon.vercel.app/api
+   - **Local Development**:
+     - Frontend: http://localhost:3000
+     - Backend API: http://localhost:5000
 
 ## 📁 Project Structure
 
